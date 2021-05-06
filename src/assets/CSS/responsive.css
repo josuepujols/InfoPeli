@@ -1,0 +1,79 @@
+
+/*Media queries para el header*/
+
+
+
+@media (max-width: 992px) { 
+    #header {
+        height: 180px;
+        padding-top: 0px;
+    }
+
+    #header a {
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-inline {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding-left: 0% !important;
+    }
+
+    
+}
+
+@media (max-width: 600px) { 
+    #header {
+        height: 260px;
+    
+    }
+
+    .form-inline input{
+        width: 90% !important;
+        margin-left: 0px !important;
+    }
+
+    .form-inline button {
+        margin-top: 30px !important;
+    }
+
+}
+
+/*Media queries para el home*/
+
+@media (max-width: 1177px) { 
+    
+}
+
+@media (max-width: 755px) { 
+    .general-section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 603px) { 
+
+    
+}
+
+@media (max-width: 540px) { 
+
+    
+}
+
+@media (max-width: 415px) { 
+
+}
+
+@media (max-width: 375px) { 
+
+    
+}
+
+

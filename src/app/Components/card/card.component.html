@@ -1,0 +1,20 @@
+
+
+<section class="general-section">
+
+    <div class="row row-container col-md-12">
+        <div class="card-container" *ngFor="let elemento of dato.dato_general; let i = index">
+            <div class="card" style="width: 18rem;">
+                <img class="poster" class="card-img-top img-fluid" src={{dato.dato_general[i][4]}}  alt="IMAGEN NO DISPONIBLE">
+                <div class="card-body">
+                  <h5 class="card-title">{{dato.dato_general[i][1]}}</h5>
+                  <p class="year">AÑO: {{dato.dato_general[i][2]}}</p>
+                  <hr class="bg-light"/>
+                  <p class="id_pelicula">ID: {{dato.dato_general[i][0]}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

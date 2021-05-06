@@ -1,0 +1,29 @@
+
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div id="header-container">
+        <a (click)="clear_text()" [routerLink]="['/home']"><span id="start">Info</span><span class="btn btn-danger" id="end">Peli</span></a>
+
+        <form class="form-inline">
+            <input (enter)="cambiar_valor()" (enter)="search.funct_search(fill)" [(ngModel)]="user_search"  [ngModelOptions]="{standalone: true}" class="form-control mr-sm-2" type="search" placeholder="TITULO DE LA PELICULA" aria-label="Search"/>
+            <button (click)="cambiar_valor()" (click)="search.funct_search(fill)" [routerLink]="['/search']" class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+            <app-search style="display: none;" #search></app-search>
+        </form>
+    </div>
+
+</nav>
+
+
+<section class="general-section container-fluid" id="new" *ngIf="ruta">
+
+</section>
+
+<section class="container-fluid" id="general-container">
+
+    <router-outlet id="secciones"></router-outlet>    
+
+</section>
+
+
+
+
+
